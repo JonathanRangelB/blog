@@ -35,3 +35,6 @@ Todos los comandos se ejecutan desde la raíz del proyecto, desde la terminal:
 | `npm run dev`     | Starts local dev server at `localhost:3030`  |
 | `npm run build`   | Build your production site to `./dist/`      |
 | `npm run preview` | Preview your build locally, before deploying |
+
+## Agradecimientos
+Gracias al usuario [Charca](https://github.com/Charca) por crear [este gran template](https://github.com/Charca/astro-blog-template). Dejenle su merecida ⭐
