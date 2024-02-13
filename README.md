@@ -1,33 +1,10 @@
-# [Astro](https://astro.build) Blog Template
+# [Astro](https://astro.build) Blog
 
-[![Screenshot](screenshot.png)](https://astro-blog-template.netlify.app/)
+![Screenshot](https://github.com/JonathanRangelB/blog/assets/3516336/ba5dc96b-deae-45b0-9f2a-8cc4b0db7c48)
 
-## 👉 Check out the ✨ [Live Demo](https://astro-blog-template.netlify.app/) ✨
+## 🚀 Estructura del proyecto
 
-## 👩‍🚀 Getting Started
-
-### Locally
-
-```
-npm init astro -- --template Charca/astro-blog-template
-```
-
-### On StackBlitz
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/charca/astro-blog-template)
-
-## ✨ Features:
-
-- ✅ Astro 4.0
-- ✅ Dark Mode
-- ✅ Full Markdown support
-- ✅ SEO-friendly setup with canonical URLs and OpenGraph data
-- ✅ RSS 2.0 generation
-- ✅ Sitemap.xml generation
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
+Dentro de tu proyecto Astro, verás las siguientes carpetas y archivos:
 
 ```
 /
@@ -42,15 +19,15 @@ Inside of your Astro project, you'll see the following folders and files:
 └── package.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Astro busca archivos `.astro` o `.md` en el directorio `src/pages/`. Cada página se expone como una ruta basada en su nombre de archivo.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+No hay nada especial en `src/components/`, pero es donde se coloca cualquier componente Astro/React/Vue/Svelte/Preact.
 
-Any static assets, like images, can be placed in the `public/` directory.
+Cualquier archivo estático, como imágenes, puede colocarse en el directorio `public/`.
 
-## 🧞 Commands
+## 🧞 Comandos
 
-All commands are run from the root of the project, from a terminal:
+Todos los comandos se ejecutan desde la raíz del proyecto, desde la terminal:
 
 | Command           | Action                                       |
 | :---------------- | :------------------------------------------- |
@@ -58,7 +35,3 @@ All commands are run from the root of the project, from a terminal:
 | `npm run dev`     | Starts local dev server at `localhost:3030`  |
 | `npm run build`   | Build your production site to `./dist/`      |
 | `npm run preview` | Preview your build locally, before deploying |
-
-## 👀 Want to learn more?
-
-Feel free to check [Astro's documentation](https://github.com/withastro/astro) or jump into Astro's [Discord server](https://astro.build/chat).
