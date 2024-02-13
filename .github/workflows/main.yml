@@ -1,0 +1,28 @@
+on: push
+name: 🚀 Deploy Workflow
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v4.1.1
+
+    - name: 💻 Node 20 set-up
+      uses: actions/setup-node@v4.0.2
+      with:
+        node-version: '20'
+      
+    - name: 🔨 Install & Build Project
+      run: |
+        npm install
+        npm run build
+    
+    - name: 📂 Sync files over FTP
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ftp.jorab.dev
+        username: ftp.jorab.dev
+        password: ${{ secrets.password }}
+        local-dir: "./dist/"
+        server-dir: "./public/"
