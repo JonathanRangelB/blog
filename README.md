@@ -1,5 +1,8 @@
 # [Astro](https://astro.build) Blog
 
+[![🚀 Deploy Workflow](https://github.com/JonathanRangelB/blog/actions/workflows/main.yml/badge.svg)](https://github.com/JonathanRangelB/blog/actions/workflows/main.yml)
+[<img alt="Website Deployed for Free with FTP Deploy Action" src="https://img.shields.io/badge/Website deployed for free with-FTP DEPLOY ACTION-%3CCOLOR%3E?style=for-the-badge&color=2b9348">](https://github.com/SamKirkland/FTP-Deploy-Action)
+
 ![Screenshot](https://github.com/JonathanRangelB/blog/assets/3516336/ba5dc96b-deae-45b0-9f2a-8cc4b0db7c48)
 
 ## 🚀 Estructura del proyecto
