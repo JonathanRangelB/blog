@@ -1,0 +1,45 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const title = 'About';
+const description = 'About your blog.';
+const permalink = `${Astro.site.href}about`;
+---
+
+<BaseLayout title={title} description={description} permalink={permalink} current="about">
+  <div class="container">
+    <h1>Acerca de mí</h1>
+    <figure class="about-image">
+      <img src="/assets/about-illustration.webp" alt="Illustration of a notebook" width="330">
+      <figcaption>
+        Illustration by
+        <a href="https://icons8.com/illustrations/author/5c07e68d82bcbc0092519bb6" target="_blank" rel="noopener">Icons 8</a>
+        from
+        <a href="https://icons8.com/illustrations" target="_blank" rel="noopener">Ouch!</a>
+      </figcaption>
+    </figure>
+    <p>Hola hola 👋</p>
+    <p>Soy Jonathan Rangel, un developer orgullosamente mexicano que todos los dias aprende algo nuevo, y prueba de ello es este mismo blog, es mi manera de preservar mis ideas, curiosidades y aprendizajes del mundo del desarollo y tecnologia y a la vez poder compartirlo con el resto de las personas que probablemente tengan los mismo problemas que yo y que quiza lo que encontre/aprendí les funcione.</p>
+    <p>Actualmente soy desarollador frontend y backend (o fullstack pa' los compas), vengo de programar en C, Java, C# y ahora JavasCript/Typescript enfocado usualmente en <a href="https://angular.dev" target="_blank">Angular</a> y <a href="https://nestjs.com" target="_blank">NestJs</a> sin dejar de lado el explorar/experimentar diferentes tecnologias web. Me considero una persona bastante amigable y con muy buen sentido del humor, aunque al principio podria llegar a ser algo reservado el tiempo me dara la confianza para invitarte tu próxima cerveza 🍻</p>
+  </div>
+</BaseLayout>
+
+<style>
+  .about-image {
+    float: right;
+    margin: -3em -7em 2em 2em;
+    max-width: 300px;
+  }
+
+  .about-image img {
+    border-radius: 8px;
+    margin-bottom: 1.5em;
+  }
+
+  @media (max-width: 1020px) {
+    .about-image {
+      float: none;
+      margin: 0 auto 2em;
+    }
+  }
+</style>
