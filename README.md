@@ -1,7 +1,13 @@
 # [Astro](https://astro.build) Blog
 
+![Astro Badge](https://img.shields.io/badge/Astro-Build-blue?style=flat&logo=astro&logoColor=fff)
 [![🚀 Deploy Workflow](https://github.com/JonathanRangelB/blog/actions/workflows/main.yml/badge.svg)](https://github.com/JonathanRangelB/blog/actions/workflows/main.yml)
-[<img alt="Website Deployed for Free with FTP Deploy Action" src="https://img.shields.io/badge/Website deployed for free with-FTP DEPLOY ACTION-%3CCOLOR%3E?style=for-the-badge&color=2b9348">](https://github.com/SamKirkland/FTP-Deploy-Action)
+[![FTP Badge](https://img.shields.io/badge/Website_deployed_for_free_with-FTP_deploy_action-2b9348?style=flat)](https://github.com/SamKirkland/FTP-Deploy-Action)
+![GitHub Issues](https://img.shields.io/github/issues/jonathanrangelb/blog)
+![GitHub Pull Requests](https://img.shields.io/github/issues-pr/jonathanrangelb/blog)
+![GitHub forks](https://img.shields.io/github/forks/jonathanrangelb/blog?style=flat)
+![GitHub Repo stars](https://img.shields.io/github/stars/jonathanrangelb/blog?style=flat)
+
 
 ![Screenshot](https://github.com/JonathanRangelB/blog/assets/3516336/ba5dc96b-deae-45b0-9f2a-8cc4b0db7c48)
 
