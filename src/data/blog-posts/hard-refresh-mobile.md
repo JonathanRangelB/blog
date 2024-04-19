@@ -1,6 +1,6 @@
 ---
 title: Hard refresh en mobile
-publishDate: 18 April 2021
+publishDate: 18 April 2024
 description: Como poder hacer refresh en dispositivos moviles eliminando la chache.
 ---
 
