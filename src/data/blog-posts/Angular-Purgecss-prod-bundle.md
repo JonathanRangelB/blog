@@ -73,3 +73,37 @@ Recomiendo incluir purgecss a tus scripts en el package.json de tu proyecto:
 De momento, esta es la configuración ganadora para mi caso. Quizás tú necesites agregar o quitar algunas líneas en la configuración, dado que mi configuración actual la deje de la manera más general posible para abarcar mis casos de uso en mis aplicaciones de angular.
 
 Espero que te sirva, bye 👋.
+
+UPDATE: hice unos pequeños cambios al archivo de configuracion de purgecss, me di cuenta que la configuración estaba usando solo funcionaba correctamente en windows, pero no en sistemas unix, asi que cuando queria hacer uso de esa configuración en mi pipeline de GithubActions, netlify y cloudflare pages fallaba porque no podia encotrar la ruta de mis archivos css dentro de mi carpeta dist del proyecto, asi que me fui a mi siempre confiable linuxMint y pude hacer la correccion para que funcionara en windows y unix, asi que les dejo las pequeñas correcciones al archivo, junto con unos agregados a la safelist para unas clases de primeNG las cuales estoy usando y que causaban que los warning, error, success de los toast y labels no estaban funcionando y estaban con un color gris base.
+
+```js
+module.exports = {
+  content: ['dist/**/index.html', 'dist/**/*.js'],
+  css: ['dist/**/*.css'],
+  output: 'dist/my-app-test/browser/', // Ruta para un proyecto de angular 18
+  safelist: {
+    standard: [
+      // Agrega aquí otros patrones de PrimeFlex que necesites
+      /(^|\s)sm:(\s|$)/,
+      /(^|\s)md:(\s|$)/,
+      /(^|\s)lg:(\s|$)/,
+      /(^|\s)xl:(\s|$)/,
+      // Reglas para que los toast y labels funcionen correctamente (los colores)
+      /-success$/,
+      /-info$/,
+      /-error$/,
+      /-danger$/,
+      /-warn$/,
+      /-warning$/,
+      /-secondary$/,
+      /-contrast$/,
+    ],
+  },
+  extractors: [
+    {
+      extractor: (content) => content.match(/[\w-/:.]+(?<!:)/g) || [],
+      extensions: ['html', 'js'],
+    },
+  ],
+};
+```
